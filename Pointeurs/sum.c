@@ -13,11 +13,10 @@ double sum2 (double *tab, int size){
 
 double resultat=0;
 double *fin = tab +size;
-    for (int *p=tab ; p<fin ;++p){
+    for (double *p=tab ; p<fin ;++p){
         
 	resultat= resultat + *p;   
-    }
-return resultat;
+    }return resultat;
 }
 
 int main(void){
@@ -27,9 +26,9 @@ tab[1]=10;
 tab[2]=1;
 tab[3]=0.1;
 tab[4]=0.01;
-int n = 5;
-sum1(tab,n);
-sum2(tab,n);
+
+printf("%f \n",sum1(tab,5));
+printf("%f \n",sum2(tab,5));
 
 
 
